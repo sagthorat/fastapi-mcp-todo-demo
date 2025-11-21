@@ -64,7 +64,7 @@ app = FastAPI(
 # Root route with HTML response
 @app.get("/", response_class=HTMLResponse)
 def root():
-    return "<h2>Welcome to the Todo API!</h2>"
+    return "<h2>Welcome to the Todo API server by MCP!</h2>"
 
 # GET route – returns all todos (with optional pagination)
 @app.get("/todos/", response_model=List[Todo], operation_id="get_all_todos")
